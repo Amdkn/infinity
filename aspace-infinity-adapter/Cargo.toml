@@ -1,0 +1,30 @@
+[package]
+name = "aspace-infinity-adapter"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "A'Space adapter for hydro-project/infinity (gel e1a3e4b): pinned hibernation / RAP / MCP-proxy surface, localhost-only, telemetry zero by default"
+publish = false
+
+[workspace]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+async-trait = "0.1"
+infinity-daemon = { path = "../crates/infinity-daemon" }
+infinity-mcp-bridge = { path = "../crates/infinity-mcp-bridge" }
+rap-client = { path = "../crates/rap-client" }
+rap-protocol = { path = "../crates/rap-protocol" }
+rap-test-servers = { path = "../crates/rap-test-servers" }
+reqwest = { version = "0.13", default-features = false, features = ["json", "default-tls"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "sync", "time"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[lints.rust]
+missing_unsafe_on_extern = "deny"
+
+[lints.clippy]
+unwrap_used = "warn"
