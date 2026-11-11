@@ -1,0 +1,23 @@
+{
+  "$schema": "https://aspaceos.tech/schemas/cordis-fiber-v5.json",
+  "name": "@aspace-v5/infinity",
+  "submodule_path": "01_Forkable/FKB00_Runtime/01_Holo_TriptyqueCore/infinity",
+  "sovereign_fork_url": "https://github.com/Amdkn/infinity.git",
+  "branch": "aspace-v5-native",
+  "family": "METABOLIC_LINEAGE_POPULATION",
+  "fractal_layer": "4L",
+  "holon_owner": "A1-BETH / A1-MORTY",
+  "capabilities": [
+    "automaton_reserve_lease",
+    "openrig_worktree_lineage",
+    "infinity_75k_scheduler"
+  ],
+  "a0_integration_target": "01_Forkable/FKB00_Runtime/00_A0_Core/a0_holon_swarm_runtime.py",
+  "egm_gateway_endpoint": "http://127.0.0.1:31415/v1/chat/completions",
+  "shared_brain_path": "00_Memoire/shared_brain/memory.jsonl",
+  "cordis_contract": {
+    "everything_is_a_plugin": true,
+    "revertible_effects": true,
+    "reactive_coeffects": true
+  }
+}
